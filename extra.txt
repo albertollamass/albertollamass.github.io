@@ -1,0 +1,42 @@
+<!-- client reference -->
+<div class="row">
+<div class="col-md-12">
+
+<div class="reference clearfix">
+
+         <!-- .title_content -->
+        <div class="title_content" style="margin-bottom:5px">
+            <div class="text_content">Client reference</div>
+            <div class="clear"></div>
+        </div>
+        <!-- /.title_content -->
+
+
+        <ul>
+          <!-- Copia y pega-->
+            <li class="clearfix">
+                <img src="http://placehold.it/100x100" class="img_reference" width="100" height="100" alt="">
+                <p></p>
+                <span></span>
+            </li>
+        </ul>
+</div>
+</div>
+
+
+
+<div class="title_content">
+    <div class="text_content">Awards</div>
+    <div class="clear"></div>
+</div>
+<!-- /.title_content -->
+
+<!-- .attributes -->
+<ul class="attributes">
+  <!-- Copia y pega-->
+    <li class="first">
+        <h5> <span class="duration"><i class="fa fa-calendar color"></i> </span></h5>
+        <h6><span class="fa fa-trophy"></span> </h6>
+        <p></p>
+    </li>
+</ul>
