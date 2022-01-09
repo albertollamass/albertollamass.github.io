@@ -22,7 +22,7 @@
 		$(this).html(event.strftime(format));
 	})
 	.on('finish.countdown', function(event) {
-	$(this).html('https://docs.google.com/presentation/d/1eroW9j7mxUT-jhIMNX1U2m2BkyR6fRWb/edit?usp=sharing&ouid=108671370337121084456&rtpof=true&sd=true')
+	$(this).html('Cópiame y pégame :) https://docs.google.com/presentation/d/1eroW9j7mxUT-jhIMNX1U2m2BkyR6fRWb/edit?usp=sharing&ouid=108671370337121084456&rtpof=true&sd=true')
 		.parent().addClass('disabled');
     });
 
