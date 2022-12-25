@@ -1,0 +1,1 @@
+{"version":3,"file":"component---src-pages-page-2-js-14df55730c71a1e973a0.js","mappings":"4JASA,UANmB,IAEf,6C","sources":["webpack://my-website-using-gatsby/./src/pages/page-2.js"],"sourcesContent":["import * as React from \"react\"\n\n\nconst SecondPage = () => (\n\n    <p>Welcome to page 2</p>\n)\n\n\nexport default SecondPage\n"],"names":[],"sourceRoot":""}
