@@ -1,5 +1,6 @@
 import React from "react";
 import { StaticImage } from 'gatsby-plugin-image'
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 //import { useStaticQuery, graphql } from "gatsby";
 
 const Banner = () => {
@@ -8,8 +9,12 @@ const Banner = () => {
         <div className="banner">
             <div className="container">
                 <div className="row">
-                    
-                    <div className="main-text">Hi, I'm Alberto Llamas</div>
+                    <div className="not-main-text">Hi I'm</div> 
+                    <div className="main-text">Alberto Llamas</div>
+                    <div className="buttons">
+                        <AnchorLink to="/#title-about"><button className="button button--pan"><span>Read More</span></button></AnchorLink>
+                        <button className="button button--pan"> <span>Download CV</span></button>
+                    </div>
                     <div className="main-image">
                         <StaticImage
                             src="../images/orla.jpg"

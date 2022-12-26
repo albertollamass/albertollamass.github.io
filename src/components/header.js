@@ -1,16 +1,19 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 const Header = () => (
   <header>
     <div className="container">
       <div className="inner-header">
-        <div className = "logo">
+        <div className="logo">
           <Link to="/">Alberto Llamas</Link>
         </div>
         <div className="navigation">
           <nav>
-            <Link to="/about">About</Link>
+            <AnchorLink to="/#title-about">
+              About Me
+            </AnchorLink>
             <Link to="/work">Work</Link>
             <Link to="/contact">Contact</Link>
           </nav>

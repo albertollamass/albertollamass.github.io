@@ -86,25 +86,57 @@ header {
     height: 100vh;
     .row {
         position: relative;
+        .not-main-text {
+          font-size: 4rem;
+          text-transform: uppercase;
+          letter-spacing: 36px;
+          font-weight: 700;
+          color: gray;
+          position: absolute;
+          width: 50%;
+          left: 0;
+          top: 20%;
+          transform: translateY(-50%);
+          text-align: center;
+          mix-blend-mode: difference;
+          z-index: 9;
+          @media(max-width: 1440px) {
+              font-size: 4.4rem;
+              letter-spacing: 28px;                
+          }
+        } 
         .main-text {
             font-size: 5.8rem;
             text-transform: uppercase;
-            letter-spacing: 42px;
+            letter-spacing: 36px;
             font-weight: 700;
             color: $white;
             position: absolute;
             width: 50%;
             left: 0;
-            top: 50%;
+            top: 45%;
             transform: translateY(-50%);
             text-align: center;
             mix-blend-mode: difference;
             z-index: 9;
             @media(max-width: 1440px) {
                 font-size: 4.4rem;
-                letter-spacing: 36px;                
+                letter-spacing: 28px;                
             }
-        } 
+        }
+        .buttons {                    
+          font-weight: 700;
+          color: $white;
+          position: absolute;
+          width: 50%;
+          left: 0;
+          top: 70%;
+          transform: translateY(-50%);
+          text-align: center;
+          mix-blend-mode: difference;
+          z-index: 9;         
+        }
+        
         .main-image {
             text-align:right ;
             align-items: flex-end;
@@ -145,6 +177,95 @@ header {
           right: -112px;
         }
       }
+}
+
+//About blurb
+
+.about-blurb {
+  background: $white;
+  position: relative;
+  .inner-blurb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+    .content {
+      width: 33%;
+      @media (max-width: 1440px) {
+        width: 40%;
+      }
+      h3 {
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 1.8rem;
+        letter-spacing: 1.5px;
+        margin: 0;
+      }
+      p {
+        font-size: 1rem;
+        line-height: 2rem;
+        font-weight: 300;
+        margin: 40px 0 72px;
+        text-align: justify;
+      }
+      .btn-row {
+        a {
+          font-weight: 700;
+          font-size: 0.875rem;
+          letter-spacing: 1.5px;
+          color: $black;
+          text-transform: uppercase;
+          text-decoration: none;
+        }
+      }
+    }
+    .images {
+      width: 50%;
+      height: 1000px;
+      position: relative;
+      z-index: 7;
+      mix-blend-mode:normal;
+      @media (max-width: 1440px) {
+        height: 800px;
+      }
+      .top-right {
+        position: absolute;
+        width: 460px;
+        top: 10%;
+        right: 8%;
+        z-index: 4;
+        @media (max-width: 1440px) {
+          width: 360px;
+        }
+      }
+      .bottom-left {
+        position: absolute;
+        width: 350px;
+        left: -20%;
+        bottom: 5%;
+        @media (max-width: 1440px) {
+          width: 310px;
+        }
+      }
+    }
+  }
+  .black-box {
+    background: $black;
+    height: 418px;
+    width: 836px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    @media (max-width: 1440px) {
+      width: 636px;
+      height: 340px;
+    }
+    &.overlay {
+      z-index: 3;
+      background: $black;
+    }
+  }
 }
 
 
@@ -188,3 +309,49 @@ footer {
       }
     }
   }
+
+
+.button {
+	pointer-events: auto;
+	cursor: pointer;
+	background: #e7e7e7;
+	border: none;
+	padding: 1.5rem 3rem;
+	margin: 0;
+	font-family: inherit;
+	font-size: inherit;
+	position: relative;
+	display: inline-block;
+}
+
+.button::before,
+.button::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.button--pan {
+	font-weight: 700;
+	border: 40px solid #000;
+	border-radius: 3rem;
+	overflow: hidden;
+	color: rgb(255, 255, 255);
+}
+
+.button--pan span {
+	position: relative;
+	mix-blend-mode: difference;
+}
+
+.button--pan::before {
+	content: '';
+	background: rgb(0, 0, 0);
+	transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1) ;
+}
+
+.button--pan:hover::before {
+	transform: translate3d(0,-100%,0);
+}

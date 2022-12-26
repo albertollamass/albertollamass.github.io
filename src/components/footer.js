@@ -1,9 +1,5 @@
 import React from "react"
 
-//Featured Companies
-import gatsby from "../images/gatsby-icon.png"
-
-
 // Socials
 import twitter from "../images/twitter.svg"
 import instagram from "../images/instagram.svg"
@@ -28,7 +24,7 @@ const Footer = () => {
       </div>
       <div className="footer">
         <div className="inner">
-          <span>© 2019 OladimejI Odunsi</span>
+          <span>© 2023 Alberto Llamas</span>
           <div className="socials">
             <a href="https://www.twitter.com/albertollamass">
               <img src={twitter} alt="Twitter" />
@@ -37,7 +33,7 @@ const Footer = () => {
               <img src={instagram} alt="Instagram" />
             </a>
           </div>
-          <span>letscreate@oladimeg.com</span>
+          <span>alberto.ll.go@gmail.com</span>
         </div>
       </div>
     </footer>
