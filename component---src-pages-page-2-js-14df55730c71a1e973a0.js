@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkmy_website_using_gatsby=self.webpackChunkmy_website_using_gatsby||[]).push([[617],{4948:function(e,s,t){t.r(s);var u=t(7294);s.default=()=>u.createElement("p",null,"Welcome to page 2")}}]);
-//# sourceMappingURL=component---src-pages-page-2-js-14df55730c71a1e973a0.js.map
