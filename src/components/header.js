@@ -14,7 +14,7 @@ const Header = () => (
             <AnchorLink to="/#title-about">
               About Me
             </AnchorLink>
-            <Link to="/work">Work</Link>
+            <Link to="/#work">Work</Link>
             <Link to="/contact">Contact</Link>
           </nav>
         </div>
