@@ -134,6 +134,9 @@ const Portfolio = () => {
                 </div>
                 
             </div>
+            <div className="spacing">
+                <h3 id="contact">CONTACT ME</h3>
+            </div>
         </div>
     )
 }

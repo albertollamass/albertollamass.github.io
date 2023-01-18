@@ -45,6 +45,8 @@ module.exports = {
       options: {
         offset: -90
       }
-    }
+    },
+    'gatsby-plugin-postcss',
+
   ],
 }

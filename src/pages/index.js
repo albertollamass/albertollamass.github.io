@@ -8,6 +8,7 @@ import Banner from "../components/banner"
 import AboutMe from "../components/aboutMe"
 import Footer from "../components/footer"
 import Portfolio from "../components/portfolio"
+import ContactForm from "../components/contactForm"
 
 const IndexPage = () => (
   <div>
@@ -15,6 +16,7 @@ const IndexPage = () => (
     <Banner />
     <AboutMe/>
     <Portfolio />
+    <ContactForm/>
     <Footer />
   </div>
 )

@@ -13,7 +13,7 @@ const Banner = () => {
                     <div className="main-text">Alberto Llamas</div>
                     <div className="buttons">
                         <AnchorLink to="/#title-about"><button className="button button--pan"><span>Read More</span></button></AnchorLink>
-                        <a href="https://drive.google.com/file/d/1sQGZUuMBIHk7KNbT0wi6dSmAHo97Yaj5/view?usp=share_link" target="_blank">
+                        <a href="https://drive.google.com/file/d/13LEfERuv-WM4dDVRZvOSpTAlzq984q3c/view?usp=share_link" target="_blank">
                             <button className="button button--pan"> <span>Download CV</span></button>
                         </a>
                     </div>
