@@ -10,28 +10,17 @@ const featured = [
 
 const Footer = () => {
   return (
-    <footer>
-      <div className="featured-companies">
-        <div className="container">
-          <ul>
-            {featured.map(({ name, image }) => (
-              <li key="name">
-                <img src={image} alt={name} />
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
+    <footer> 
       <div className="footer">
         <div className="inner">
           <span>© 2023 Alberto Llamas</span>
           <div className="socials">
-            <a href="https://www.twitter.com/albertollamass">
+            {/* <a href="https://www.twitter.com/albertollamass">
               <img src={twitter} alt="Twitter" />
             </a>
             <a href="https://www.instagram.com/albertollamass">
               <img src={instagram} alt="Instagram" />
-            </a>
+            </a> */}
           </div>
           <span>alberto.ll.go@gmail.com</span>
         </div>

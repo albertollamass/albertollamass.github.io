@@ -13,7 +13,9 @@ const Banner = () => {
                     <div className="main-text">Alberto Llamas</div>
                     <div className="buttons">
                         <AnchorLink to="/#title-about"><button className="button button--pan"><span>Read More</span></button></AnchorLink>
-                        <button className="button button--pan"> <span>Download CV</span></button>
+                        <a href="https://drive.google.com/file/d/13LEfERuv-WM4dDVRZvOSpTAlzq984q3c/view?usp=share_link" target="_blank">
+                            <button className="button button--pan"> <span>Download CV</span></button>
+                        </a>
                     </div>
                     <div className="main-image">
                         <StaticImage
