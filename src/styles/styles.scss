@@ -95,6 +95,16 @@ header {
   position: relative;
   height: 100vh;
 
+  @media(max-width: 1440px) {
+    width: 976px;
+    min-width: 976px;
+  }
+
+  @media(max-width: 976px) {
+    width: 768px;
+    min-width: 768px;
+  }
+
   .row {
     position: relative;
 
@@ -114,7 +124,7 @@ header {
       z-index: 9;
 
       @media(max-width: 1440px) {
-        font-size: 4.4rem;
+        font-size: 2rem;
         letter-spacing: 28px;
       }
     }
@@ -135,8 +145,8 @@ header {
       z-index: 9;
 
       @media(max-width: 1440px) {
-        font-size: 4.4rem;
-        letter-spacing: 28px;
+        font-size: 3rem;
+        letter-spacing: 20px;
       }
     }
 
@@ -214,6 +224,8 @@ header {
 
       @media (max-width: 1440px) {
         width: 40%;
+        margin-left: 0px;
+        margin-right: 30%;
       }
 
       h3 {
@@ -427,6 +439,9 @@ footer {
       font-weight: 700;
       font-size: 2.3rem;
       letter-spacing: 1.5px;
+      @media(max-width: 1440px) {
+        font-size: 1.8rem;
+      }
     }
 
     p {
@@ -438,11 +453,22 @@ footer {
       text-align: justify;
     }
 
+    @media(max-width: 1440px) {
+      font-size: 0.75rem;
+    }
+  
+    @media(max-width: 976px) {
+      font-size: 0.75rem;
+    }
+
     .p1 {
       display: flex;
       background-color: rgb(1, 25, 39);
       height: 53rem;
       width: 100%;
+      @media(max-width: 1440px) {
+        height: 70rem;
+      }
 
       .development-tools {
         margin-left: 100px;
@@ -451,6 +477,9 @@ footer {
         font-size: 1.2rem;
         text-align: justify;
         text-transform: uppercase;
+        @media(max-width: 1440px) {
+          font-size: 0.75rem;
+        }
       }
 
       .list {
@@ -478,11 +507,11 @@ footer {
         transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
       }
       .texto {
-        width: 30%;
+        width: 40%;
       }
       .imagen {
         margin-top: 30px;
-        width: 70%;
+        width: 60%;
         text-align: center;
         align-items: center;
       }
@@ -493,6 +522,9 @@ footer {
       background-color: rgb(26, 26, 26);
       height: 50rem;
       width: 100%;
+      @media(max-width: 1440px) {
+        height: 60rem;
+      }
 
       .development-tools {
         margin-left: 100px;
@@ -501,6 +533,9 @@ footer {
         font-size: 1.2rem;
         text-align: justify;
         text-transform: uppercase;
+        @media(max-width: 1440px) {
+          font-size: 0.75rem;
+        }
       }
 
       .list {
@@ -525,11 +560,11 @@ footer {
         transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
       }
       .texto {
-        width: 30%;
+        width: 40%;
       }
       .imagen {
         margin-top: 30px;
-        width: 70%;
+        width: 60%;
         text-align: center;
         align-items: center;
       }
@@ -540,6 +575,9 @@ footer {
       background-color: rgb(49, 49, 51);
       height: 45rem;
       width: 100%;
+      @media(max-width: 1440px) {
+        height: 50rem;
+      }
 
       .development-tools {
         margin-left: 100px;
@@ -548,6 +586,9 @@ footer {
         font-size: 1.2rem;
         text-align: justify;
         text-transform: uppercase;
+        @media(max-width: 1440px) {
+          font-size: 0.75rem;
+        }
       }
 
       .list {
@@ -572,11 +613,11 @@ footer {
         transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
       }
       .texto {
-        width: 30%;
+        width: 40%;
       }
       .imagen {
         margin-top: 30px;
-        width: 70%;
+        width: 60%;
         text-align: center;
         align-items: center;
       }
@@ -587,6 +628,9 @@ footer {
       background-color: rgb(18, 49, 101);
       height: 50rem;
       width: 100%;
+      @media(max-width: 1440px) {
+        height: 55rem;
+      }
 
       .development-tools {
         margin-left: 100px;
@@ -595,6 +639,9 @@ footer {
         font-size: 1.2rem;
         text-align: justify;
         text-transform: uppercase;
+        @media(max-width: 1440px) {
+          font-size: 0.75rem;
+        }
       }
 
       .list {
@@ -647,4 +694,9 @@ footer {
     letter-spacing: 1.5px;
   }
   background-color: $white;
+}
+
+
+@media (max-width: 1200)  {
+  
 }
