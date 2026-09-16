@@ -17,7 +17,7 @@ const STR = {
       lang: "Language",
     },
     hero: {
-      title: "Software engineer building event-driven products.",
+      title: "Software Engineer",
       a: "I'm",
       b: ", Software Engineer at",
       c: "in",
@@ -194,7 +194,7 @@ const STR = {
       lang: "Idioma",
     },
     hero: {
-      title: "Ingeniero de software construyendo productos event-driven.",
+      title: "Ingeniero de Software",
       a: "Soy",
       b: ", Ingeniero de Software en",
       c: "en",
