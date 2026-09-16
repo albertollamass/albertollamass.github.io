@@ -1,4 +1,5 @@
 import * as React from "react"
+import { LanguageProvider, ThemeProvider } from "./i18n"
 
 import Header from "./components/header"
 import Banner from "./components/banner"
@@ -13,21 +14,25 @@ import ContactForm from "./components/contactForm"
 import Education from "./components/education"
 
 const App = () => (
-  <div>
-    <Header />
-    <main>
-      <Banner />
-      <PhotoStrip />
-      <AboutMe />
-      <Experience />
-      <Portfolio />
-      <Skills />
-      <Uses />
-      <Education />
-      <ContactForm />
-    </main>
-    <Footer />
-  </div>
+  <LanguageProvider>
+    <ThemeProvider>
+      <div id="top">
+        <Header />
+        <main>
+          <Banner />
+          <PhotoStrip />
+          <AboutMe />
+          <Experience />
+          <Portfolio />
+          <Skills />
+          <Uses />
+          <Education />
+          <ContactForm />
+        </main>
+        <Footer />
+      </div>
+    </ThemeProvider>
+  </LanguageProvider>
 )
 
 export default App

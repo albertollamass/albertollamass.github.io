@@ -17,6 +17,14 @@
       content="FullStack Developer at Leroy Merlin. Event-driven systems, data platforms, AI enablement."
     />
     <meta property="og:type" content="website" />
+    <script>
+      try {
+        var th = localStorage.getItem("site-theme");
+        if (th === "dark" || (!th && matchMedia("(prefers-color-scheme: dark)").matches)) {
+          document.documentElement.classList.add("dark");
+        }
+      } catch (e) {}
+    </script>
   </head>
   <body>
     <div id="root"></div>
