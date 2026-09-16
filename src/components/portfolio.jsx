@@ -19,7 +19,7 @@ const projects = [
         link: "https://github.com/albertollamass/web-boralba",
         linkLabel: "github.com/albertollamass/web-boralba",
         demo: "https://albertollamass.github.io/web-boralba/",
-        image: null,
+        image: "/images/boralba.jpg",
     },
     {
         key: "tfg",
