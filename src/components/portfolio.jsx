@@ -4,37 +4,39 @@ import { useLang } from "../i18n"
 
 const projects = [
     {
-        key: "apne",
-        title: "APNE",
-        stack: ["Django", "Python", "HTML", "CSS", "JavaScript", "Figma", "Jira"],
-        link: "https://github.com/albertollamass/GII-DGP",
-        linkLabel: "github.com/albertollamass/GII-DGP",
-        image: "/images/apne.png",
-    },
-    {
-        key: "universitter",
-        title: "Universitter",
-        stack: ["Flutter", "Dart", "Ruby on Rails"],
-        link: "https://github.com/albertollamass/Practicas-DS/tree/main/P4",
-        linkLabel: "github.com/albertollamass/Practicas-DS",
-        image: "/images/ds.png",
-    },
-    {
         key: "angry",
         title: "Angry Birds 3D",
         stack: ["JavaScript", "HTML", "Three.js"],
         link: "https://github.com/albertollamass/angry-birds",
         linkLabel: "github.com/albertollamass/angry-birds",
-        demo: "https://albertollamass.github.io/angry-birds",
+        demo: "https://albertollamas-gii.github.io/angry-birds-SG/",
         image: "/images/angry.png",
     },
     {
-        key: "infopets",
-        title: "InfoPets",
-        stack: ["HTML", "CSS", "JavaScript", "PHP", "SQL", "Ajax"],
-        link: "https://github.com/albertollamass/GII_SIBW/",
-        linkLabel: "github.com/albertollamass/GII_SIBW",
-        image: "/images/sibw.png",
+        key: "boralba",
+        title: "Web Boralba",
+        stack: ["React", "Vite", "Supabase"],
+        link: "https://github.com/albertollamass/web-boralba",
+        linkLabel: "github.com/albertollamass/web-boralba",
+        demo: "https://albertollamass.github.io/web-boralba/",
+        image: null,
+    },
+    {
+        key: "tfg",
+        title: "Peña Deportiva App",
+        stack: ["Flutter", "Dart", "Firebase"],
+        link: "https://github.com/albertollamass/TFG/tree/main/football_club_app",
+        linkLabel: "github.com/albertollamass/TFG",
+        image: null,
+    },
+    {
+        key: "spotify",
+        title: "Spotify Monthly Playlists",
+        stack: ["Go", "PostgreSQL", "Spotify API"],
+        link: "https://github.com/albertollamass/spotify-monthly-playlist",
+        linkLabel: "github.com/albertollamass/spotify-monthly-playlist",
+        image: null,
+        wip: true,
     },
 ];
 
@@ -56,11 +58,15 @@ const Portfolio = () => {
                 <div className="projects-grid">
                     {projects.map((p, i) => (
                         <article key={p.key} className="project-card">
-                            <div className="project-media">
-                                <img src={p.image} alt={p.title} loading="lazy" />
-                            </div>
+                            {p.image && (
+                                <div className="project-media">
+                                    <img src={p.image} alt={p.title} loading="lazy" />
+                                </div>
+                            )}
                             <div className="project-body">
-                                <p className="project-tag">{tags[i]}</p>
+                                <p className="project-tag">
+                                    {tags[i]}{p.wip && <span className="wip-badge">WIP</span>}
+                                </p>
                                 <h3>
                                     <a href={p.link} target="_blank" rel="noopener noreferrer">{p.title} ↗</a>
                                 </h3>

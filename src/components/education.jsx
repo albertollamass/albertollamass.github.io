@@ -10,17 +10,19 @@ const Education = () => {
         <p className="section-eyebrow">{t("edu.eyebrow")}</p>
         <h2 className="section-title">{t("edu.title")}</h2>
         <div className="edu-grid">
-          <div>
-            <article className="edu-card">
-              <div className="edu-head">
-                <h3>{t("edu.school")}</h3>
-                <span className="timeline-period">{t("edu.period")}</span>
-              </div>
-              <p className="edu-degree">{t("edu.degree")}</p>
-              <ul>
-                {t("edu.details").map(d => <li key={d}>{d}</li>)}
-              </ul>
-            </article>
+          <div className="edu-list">
+            {t("edu.entries").map(e => (
+              <article key={e.school} className="edu-card">
+                <div className="edu-head">
+                  <h3>{e.school}</h3>
+                  <span className="timeline-period">{e.period}</span>
+                </div>
+                <p className="edu-degree">{e.degree}</p>
+                <ul>
+                  {e.details.map(d => <li key={d}>{d}</li>)}
+                </ul>
+              </article>
+            ))}
           </div>
           <div className="lang-card">
             <h3>{t("edu.langsTitle")}</h3>

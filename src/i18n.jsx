@@ -19,7 +19,7 @@ const STR = {
     hero: {
       title: "Software engineer building event-driven products.",
       a: "I'm",
-      b: ", FullStack Developer at",
+      b: ", Software Engineer at",
       c: "in",
       d: "— microservices with Spring Boot + Kafka, APIs with NestJS, frontends with Vue 3, and data platforms on BigQuery + DBT. I also lead AI tooling enablement and share the journey on",
       linkedin: "LinkedIn",
@@ -40,8 +40,8 @@ const STR = {
       eyebrow: "About",
       title: "I'm Alberto. I live in Madrid, building and sharing the journey.",
       p1: "I studied Computer Engineering at the University of Granada (2019–2023, 7.8/10, honors in Agile Development Methodologies) because I liked creating things from scratch. That instinct still drives my work today.",
-      p2: "I currently work at Leroy Merlin as a FullStack Developer, building web apps at enterprise level — event-driven microservices with Spring Boot and Kafka, production backends migrated from Express to NestJS under hexagonal architecture, and frontends with Vue 3 + Pinia. Most of my time goes into making complex systems feel straightforward for the people using them.",
-      p3: "My expertise is full-stack, but I really love the platform side: data pipelines in BigQuery, ETL modernized from Pentaho to DBT with CI/CD on Argo Workflows, and AI-assisted engineering — I defined spec-driven development practices and trained 150+ engineers on compliant, effective AI tooling use.",
+      p2: "I currently work at Leroy Merlin as a Software Engineer, building web apps at enterprise level — event-driven microservices with Spring Boot and Kafka, production backends migrated from Express to NestJS under hexagonal architecture, and frontends with Vue 3 + Pinia. Most of my time goes into making complex systems feel straightforward for the people using them.",
+      p3: "My expertise is full-stack, but I really love the platform side: data pipelines in BigQuery, ETL modernized from Pentaho to DBT with CI/CD on Argo Workflows, and AI-assisted engineering — I defined spec-driven development practices and trained 150+ engineers on compliant, effective AI tooling use. I'm now going deeper on the data side with a Master's in Data Science at the UOC (started September 2026).",
       p4: "When I'm not working, you'll usually find me playing sports, travelling, or tinkering with side projects — some of which are below.",
       linkIn: "Connect on LinkedIn",
       linkGh: "Follow on GitHub",
@@ -72,16 +72,16 @@ const STR = {
       subC: "Production work at Leroy Merlin lives behind enterprise repos — happy to walk through it on a call.",
       demo: "Play demo",
       tags: [
-        "FullStack · Accessibility",
-        "Mobile · Backend",
         "WebGL · Game",
-        "E-commerce · FullStack",
+        "Client work · React + Supabase",
+        "TFG · Mobile",
+        "WIP · Backend",
       ],
       descs: [
-        "Accessible app to manage students and teachers — ordering menus, assigning tasks — for San Rafael Special Needs School in Granada.",
-        "Twitter-like Android app for universities and researchers. Only verified university members can publish research and news.",
         "3D Angry Birds-like game built with Three.js. Playable in the browser.",
-        "Custom pet store with login management, catalogue and shopping cart.",
+        "Replica of the Boralba Lighting site with a Supabase-backed admin panel, so the client's own team can vibe-code content updates — I only step in for domain or database management.",
+        "Final degree project: Flutter mobile app to manage a supporters' club — members, events and Firebase-backed content.",
+        "Work in progress: Go service that turns your Spotify history into automatic monthly playlists, plus a recommendations playlist based on what you listened to.",
       ],
     },
     skills: {
@@ -131,13 +131,23 @@ const STR = {
     edu: {
       eyebrow: "Background",
       title: "Education & languages",
-      school: "University of Granada",
-      degree: "Bachelor's in Computer Engineering",
-      period: "2019 – 2023",
-      details: [
-        "GPA: 7.8/10",
-        "Honors in Agile Development Methodologies",
-        "Top 20 Digital Talent",
+      entries: [
+        {
+          school: "UOC — Universitat Oberta de Catalunya",
+          degree: "Master's in Data Science",
+          period: "September 2026 – Present",
+          details: ["In progress — started September 2026"],
+        },
+        {
+          school: "University of Granada",
+          degree: "Bachelor's in Computer Engineering",
+          period: "2019 – 2023",
+          details: [
+            "GPA: 7.8/10",
+            "Honors in Agile Development Methodologies",
+            "Top 20 Digital Talent",
+          ],
+        },
       ],
       langsTitle: "Languages",
       langs: [
@@ -186,7 +196,7 @@ const STR = {
     hero: {
       title: "Ingeniero de software construyendo productos event-driven.",
       a: "Soy",
-      b: ", FullStack Developer en",
+      b: ", Ingeniero de Software en",
       c: "en",
       d: "— microservicios con Spring Boot + Kafka, APIs con NestJS, frontends con Vue 3 y plataformas de datos sobre BigQuery + DBT. También lidero la adopción de herramientas de IA y comparto el camino en",
       linkedin: "LinkedIn",
@@ -207,8 +217,8 @@ const STR = {
       eyebrow: "Sobre mí",
       title: "Soy Alberto. Vivo en Madrid, construyendo y compartiendo el camino.",
       p1: "Estudié Ingeniería Informática en la Universidad de Granada (2019–2023, 7,8/10, matrícula en Metodologías Ágiles de Desarrollo) porque me gustaba crear cosas desde cero. Ese instinto sigue moviendo mi trabajo hoy.",
-      p2: "Actualmente trabajo en Leroy Merlin como FullStack Developer, construyendo aplicaciones web a nivel enterprise — microservicios event-driven con Spring Boot y Kafka, backends productivos migrados de Express a NestJS con arquitectura hexagonal, y frontends con Vue 3 + Pinia. La mayor parte de mi tiempo la dedico a que los sistemas complejos se sientan sencillos para quien los usa.",
-      p3: "Mi especialidad es full-stack, pero lo que más me gusta es la parte de plataforma: pipelines de datos en BigQuery, ETL modernizado de Pentaho a DBT con CI/CD sobre Argo Workflows, e ingeniería asistida por IA — definí prácticas de desarrollo spec-driven y formé a más de 150 ingenieros en un uso eficaz y conforme de herramientas de IA.",
+      p2: "Actualmente trabajo en Leroy Merlin como Ingeniero de Software, construyendo aplicaciones web a nivel enterprise — microservicios event-driven con Spring Boot y Kafka, backends productivos migrados de Express a NestJS con arquitectura hexagonal, y frontends con Vue 3 + Pinia. La mayor parte de mi tiempo la dedico a que los sistemas complejos se sientan sencillos para quien los usa.",
+      p3: "Mi especialidad es full-stack, pero lo que más me gusta es la parte de plataforma: pipelines de datos en BigQuery, ETL modernizado de Pentaho a DBT con CI/CD sobre Argo Workflows, e ingeniería asistida por IA — definí prácticas de desarrollo spec-driven y formé a más de 150 ingenieros en un uso eficaz y conforme de herramientas de IA. Ahora profundizo en el lado del dato con el Máster en Ciencia de Datos de la UOC (inicio en septiembre de 2026).",
       p4: "Cuando no estoy trabajando, me encontrarás haciendo deporte, viajando o trasteando con side projects — algunos están aquí abajo.",
       linkIn: "Conecta en LinkedIn",
       linkGh: "Sígueme en GitHub",
@@ -239,16 +249,16 @@ const STR = {
       subC: "El trabajo productivo de Leroy Merlin vive en repos enterprise — encantado de contarlo en una llamada.",
       demo: "Probar demo",
       tags: [
-        "FullStack · Accesibilidad",
-        "Móvil · Backend",
         "WebGL · Juego",
-        "E-commerce · FullStack",
+        "Cliente · React + Supabase",
+        "TFG · Móvil",
+        "WIP · Backend",
       ],
       descs: [
-        "App accesible para gestionar alumnos y profesores — pedir menús, asignar tareas — para el Colegio de Educación Especial San Rafael de Granada.",
-        "App Android tipo Twitter para universidades e investigadores. Solo miembros verificados pueden publicar investigaciones y noticias.",
         "Juego 3D tipo Angry Birds construido con Three.js. Jugable en el navegador.",
-        "Tienda de mascotas a medida con gestión de login, catálogo y carrito.",
+        "Réplica de la web de Boralba Lighting con panel de administración sobre Supabase, para que el propio equipo del cliente vibecodee el contenido — solo intervengo para gestión de dominios o BBDD.",
+        "Trabajo de Fin de Grado: app móvil con Flutter para gestionar una peña deportiva — socios, eventos y contenido sobre Firebase.",
+        "En construcción: servicio en Go que convierte tu historial de Spotify en playlists mensuales automáticas, más una de recomendaciones según lo escuchado.",
       ],
     },
     skills: {
@@ -298,13 +308,23 @@ const STR = {
     edu: {
       eyebrow: "Trayectoria",
       title: "Educación e idiomas",
-      school: "Universidad de Granada",
-      degree: "Grado en Ingeniería Informática",
-      period: "2019 – 2023",
-      details: [
-        "Nota media: 7,8/10",
-        "Matrícula en Metodologías Ágiles de Desarrollo",
-        "Top 20 Talento Digital",
+      entries: [
+        {
+          school: "UOC — Universitat Oberta de Catalunya",
+          degree: "Máster en Ciencia de Datos",
+          period: "Septiembre 2026 – Actualidad",
+          details: ["En curso — inicio en septiembre de 2026"],
+        },
+        {
+          school: "Universidad de Granada",
+          degree: "Grado en Ingeniería Informática",
+          period: "2019 – 2023",
+          details: [
+            "Nota media: 7,8/10",
+            "Matrícula en Metodologías Ágiles de Desarrollo",
+            "Top 20 Talento Digital",
+          ],
+        },
       ],
       langsTitle: "Idiomas",
       langs: [
